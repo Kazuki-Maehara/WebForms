@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en-US'>
+  <head>
+    <meta charset="utf-8">
+    <title>Actual buttons</title>
+    <style>
+      p {
+        border: 1px solid;
+        border-radius: 0.5em;
+        width: 480px;
+      }
+      input {
+        width: 300px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <p>
+      <input type="email" id="email" name="email" multiple>
+    </p>
+
+    <p>
+      <input type="search" id="search" name="search">
+    </p>
+
+    <p>
+      <input type="tel" id="tel" name="tel">
+    </p>
+
+    <p>
+      <input type="url" id="url" name="url">
+    </p>
+
+    <p>
+      <input type="number" name="age" id="age" min="1" max="10" step="2">
+    </p>
+
+    <p>
+      <input type="number" name="change" id="pennies" min="0" max="1" step="0.01">
+    </p>
+
+    <p>
+      <label for="price">Choose a maximum house price: </label>
+      <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+      <output class="price-output" for="price"></output>
+    </p>
+
+    <p>
+      <label for="datetime">datetime-local: </label>
+      <input type="datetime-local" name="datetime" id="datetime">
+    </p>
+
+    <p>
+      <label for="month">month: </label>
+      <input type="month" name="month" id="month">
+    </p>
+
+    <p>
+      <label for="time">time: </label>
+      <input type="time" name="time" id="time">
+    </p>
+
+    <p>
+      <label for="week">week: </label>
+      <input type="week" name="week" id="week">
+    </p>
+
+    <p>
+      <label for="myDate">When are you available this summer?</label>
+      <input type="date" name="myDate" min="2021-06-01" max="2021-08-31" step="7" id="myDate">
+    </p>
+
+    <p>
+      <input type="color" name-"color" id="color"
+    </p>
+    <script>
+      const price = document.querySelector('#price');
+      const output = document.querySelector('.price-output')
+      output.textContent = price.value;
+
+      price.addEventListener('input', function() {
+        output.textContent = price.value;
+      });
+    </script>
+  </body>
+</html>
