@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Other form controls</title>
+    <style>
+      p {
+        border: 1px solid;
+        border-radius: 0.5em;
+        width: 480px;
+      }
+      input {
+        width: 300px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>
+      <textarea cols="30" rows="8"></textarea>
+    </p>
+
+    <p>
+      <select id="simple" name="simple" size="2">
+        <option>Banana</option>
+        <option selected>Cherry</option>
+        <option>Lemon</option>
+      </select>
+    </p>
+
+    <p>
+      <select id="groups" name="groups">
+        <optgroup label="fruits">
+          <option>Banana</option>
+          <option selected>Cherry</option>
+          <option>Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+          <opton>Carrot</option>
+            <option>Carrot</option>
+            <option>Eggplant</option>
+            <option>Potato</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <select id="simple" name="simple">
+        <option value="banana">Big, beautiful yellow banana</option>
+        <option value="cherry">Succulent, juicy cherry</option>
+        <option value="lemon">Sharp, powerful lemon</option>
+      </select>
+    </p>
+
+    <p>
+      <select id="multi" name="multi" multiple size="8">
+        <optgroup label="fruits">
+          <option>Banana</option>
+          <option selected>Cherry</option>
+          <option>Lemon</option>
+        </optgroup>
+        <optgroup label="vegetables">
+          <opton>Carrot</option>
+            <option>Carrot</option>
+            <option>Eggplant</option>
+            <option>Potato</option>
+        </optgroup>
+      </select>
+    </p>
+
+    <p>
+      <label for="myFruit">What's your favorite fruit?</label>
+      <input type-"text" name="myFruit" id="myFruit" list="mySuggestion">
+      <datalist id="mySuggestion">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+      </datalist>
+    </p>
+
+    <p>
+      <progress max="100" value="75">75/100</progress>
+    </p>
+
+    <p>
+      <meter min="0" max="100" value="34" low="33" high="66" optimum="50">75</meter>
+    </p>
+  </body>
+
+</html>
